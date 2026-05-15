@@ -15,22 +15,17 @@ public class IsoscelesTrapezoid extends Figure {
 
     @Override
     public void draw() {
-
-        System.out.println("Figure: Isosceles Trapezoid , " 
-            + "First Base: " + firstBase + LENGTH_UNITS + "," + " Second Base: " + secondBase + LENGTH_UNITS 
-            + ", " + "Height: " + height + LENGTH_UNITS 
-            + ", " + "Area: " + getArea() 
-            + AREA_UNITS + ", " + "Color: " + color.name());
-
+        System.out.println("Figure: Isosceles Trapezoid, First Base: " + firstBase
+                + LENGTH_UNITS + ", Second Base: " + secondBase + LENGTH_UNITS
+                + ", Height: " + height + LENGTH_UNITS
+                + ", Area: " + getArea() + AREA_UNITS
+                + ", Color: " + color.name());
     }
 
     @Override
     public double getArea() {
         double basesSum = firstBase + secondBase;
-
         double area = 0.5 * basesSum * height;
-
         return area;
     }
-
 }
