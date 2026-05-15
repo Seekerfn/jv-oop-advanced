@@ -1,4 +1,5 @@
 package core.basesyntax;
+
 abstract class Figure implements AreaCalculator, Drawable {
 
     protected static final String AREA_UNITS = " sq. units";

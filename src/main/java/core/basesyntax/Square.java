@@ -1,7 +1,8 @@
 package core.basesyntax;
+
 class Square extends Figure {
 
-    double length;
+    private double length;
 
     public Square(double length, Colors color) {
         super(color);
@@ -11,7 +12,9 @@ class Square extends Figure {
 
     @Override
     public void draw() {
-        System.out.println("Figure: Square, " + "Length: " + length + LENGTH_UNITS + ", " + "Area: " + getArea() + AREA_UNITS + ", " + "Color: " + color.name());
+        System.out.println("Figure: Square, " + "Length: " + length + LENGTH_UNITS 
+        + ", " + "Area: " + getArea() + AREA_UNITS 
+        + ", " + "Color: " + color.name());
     }
 
     @Override
